@@ -72,6 +72,7 @@ body {
 /*  General CSS*/
 .wrapper{
     max-width: 1200px;
+    min-width: 500px;
     height: auto;
     margin: 0 auto;
     position: relative;
@@ -96,9 +97,13 @@ header nav ul li a{
 
 /*  header  */
 header{
+    left: 0;
+    top: 0;
     width: 100%;
     height: 80px;
     background: #353434;
+    position: fixed;
+    z-index: 1000;
 }
 
 header .logo{
@@ -196,8 +201,9 @@ header ul.social li a.gplus{
     background-position: -72px 0;
 }
 
-
-
+.content{
+    margin-top: 80px;
+}
 
 /*  Billboard  */
 .billboard{
