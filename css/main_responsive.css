@@ -72,7 +72,6 @@ body {
 /*  General CSS*/
 .wrapper{
     max-width: 1200px;
-    min-width: 500px;
     height: auto;
     margin: 0 auto;
     position: relative;
