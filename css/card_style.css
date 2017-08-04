@@ -1,6 +1,5 @@
 /*body{ font-family: Lato,'Open Sans', sans-sarif; font-size: 16px; background-color: #1F1F1F; }*/
 /**{margin: 0; padding: 0; box-sizing: border-box;}*/
-.mainContent { background: #E8E5DD; width: 1000px; margin: 100px auto 20px; overflow: hidden }
 .row{width: 100%; float: left; margin-top: 50px; font-size: 0}
 
 /*= common css to all effects =*/
@@ -107,13 +106,6 @@ p {font-size: 14px; font-weight: 300; line-height: 22px; padding: 0 30px; margin
 /*= Media Query 
 =============== */
 @media only screen and (max-width: 800px){
-	.mainContent {
-		width: 100%;
-		background: #E8E5DD;
-		margin: 60px auto 10px;
-		overflow: hidden;
-		position: relative;
-	}
 	/*.container {width: 100%; float: none}*/
 	.row{width: 100%; float: left; margin-top: 70px; font-size: 0}
 	.team-members{text-align: center;}
@@ -176,7 +168,7 @@ p {font-size: 14px; font-weight: 300; line-height: 22px; padding: 0 30px; margin
 	.effect-5 .member-info {background-color: #fff; position: absolute; width: 100%; top: 0; left: 0; height: 82px; transition: 0.3s; z-index: 2;}
 	.effect-5 .member-image{margin-top: 60px; float: left; width: 100%; position: relative; transition: 0.3s; z-index: 4;}
 	.effect-5 .member-image img{width: 100%;}
-	.effect-5 .member-info:before{border-left: 90px solid transparent; border-right: 95px solid transparent; border-top: 15px solid #fff; bottom: -15px; content: ""; left: 0; position: absolute; z-index: 9;}
+	.effect-5 .member-info:before{border-left: 90px solid transparent; border-right: 90px solid transparent; border-top: 15px solid #fff; bottom: -15px; content: ""; left: 0; position: absolute; z-index: 9;}
 	.effect-5:hover .member-info{height: 140px; transition: 0.3s; z-index: 6;}
 	.effect-5:hover .member-image{margin-top: 135px; transition: 0.3s;}
 	/*= effect-5 css end =*/

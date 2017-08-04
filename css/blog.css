@@ -9,13 +9,6 @@ a { color: #a6a6a6; text-decoration: none; transition: All 0.5s ease; -webkit-tr
 a:hover { color: #000; }
 .blank { height: 5px; overflow: hidden; width: 100%; margin: auto; clear: both }
 
-/* mainContent */
-.mainContent {
-    max-width: 1200px;
-    background: #E8E5DD;
-    margin: 100px auto 20px;
-    overflow: hidden;
-}
 aside { width: 30%; float: left; }
 .avatar { margin: 20px auto; width: 160px; height: 160px; border-radius: 160px; -moz-border-radius: 160px; -webkit-border-radius: 160px; overflow: hidden; }
 .avatar a { display: block; padding-top: 97px; width: 160px; height: 63px; background: url(../images/photo.jpg) no-repeat; background-size: 160px 160px }
@@ -56,18 +49,10 @@ aside section h2 { background: #f16e50; color: #FFF; padding-left: 30px; height:
 .pages a:hover { background: #CCC }
 
 @media (max-width:1200px){
-    .mainContent {
-        background: #E8E5DD;
-        margin: 100px auto 20px;
-        overflow: hidden;
-        position: relative;
-    }
+
 }
 
 @media (max-width:640px){
-    .mainContent {
-        margin: 60px auto 10px;
-    }
     aside { width: 100%; float: none; }
     .blogitem { width: 100%; background: #fff; float: none }
     .avatar {

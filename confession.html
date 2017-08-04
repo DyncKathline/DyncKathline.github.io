@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Crafty |  Free HTML5/CSS3 template</title>
+    <meta charset="utf-8">
+    <meta name="author" content="pixelhint.com">
+    <meta name="description" content="Crafty is a stunning HTML5/CSS3 multi-purpose template, well-coded, commented code and easy to customize"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/default.css">
+    <link rel="stylesheet" type="text/css" href="css/back_to_top.css">
+    <script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="js/garden.js"></script>
+    <script type="text/javascript" src="js/functions.js"></script>
+    <script type="text/javascript" src="js/back_to_top.js"></script>
+</head>
+<body>
+<header>
+    <div class="wrapper">
+        <img src="img/logo.png" alt="Crafty" class="logo">
+        <a href="#" class="menu_icon" id="menu_icon"></a>
+        <nav id="nav_menu">
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="blog.html">博客</a></li>
+                <li><a href="game.html">游戏</a></li>
+                <li><a href="javascript:void (0)" class="active">表白神器</a></li>
+            </ul>
+        </nav>
+        <ul class="social">
+            <!--<li><a class="fb" href="#"></a></li>-->
+            <!--<li><a class="twitter" href="#"></a></li>-->
+            <!--<li><a class="gplus" href="#"></a></li>-->
+        </ul>
+    </div>
+</header><!--  End Header  -->
+<div class="mainContent">
+    <div id="mainDiv">
+        <div id="code">
+            <span class="comments">/**</span><br />
+            <span class="comments">*2013—02-14,</span><br />
+            <span class="comments">*2013-02-28.</span><br />
+            <span class="comments">*/</span><br />
+            Boy name = <span class="keyword">Mr</span> LI<br />
+            Girl name = <span class="keyword">Mrs</span> ZHANG<br />
+            <span class="comments">// Fall in love river. </span><br />
+            The boy love the girl;<br />
+            <span class="comments">// They love each other.</span><br />
+            The girl loved the boy;<br />
+            <span class="comments">// AS time goes on.</span><br />
+            The boy can not be separated the girl;<br />
+            <span class="comments">// At the same time.</span><br />
+            The girl can not be separated the boy;<br />
+            <span class="comments">// Both wind and snow all over the sky.</span><br />
+            <span class="comments">// Whether on foot or 5 kilometers.</span><br />
+            <span class="keyword">The boy</span> very <span class="keyword">happy</span>;<br />
+            <span class="keyword">The girl</span> is also very <span class="keyword">happy</span>;<br />
+            <span class="comments">// Whether it is right now</span><br />
+            <span class="comments">// Still in the distant future.</span><br />
+            The boy has but one dream;<br />
+            <span class="comments">// The boy wants the girl could well have been happy.</span><br />
+            <br>
+            <br>
+            I want to say:<br />
+            Baby, I love you forever;<br />
+        </div>
+        <div id="loveHeart">
+            <canvas id="garden"></canvas>
+            <div id="words">
+                <div id="messages">
+                    亲爱的，这是我们相爱在一起的时光。
+                    <div id="elapseClock"></div>
+                </div>
+                <div id="loveu">
+                    爱你直到永永远远。<br/>
+                    <div class="signature">- 李先生</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <span id="client"></span>
+
+    <script type="text/javascript">
+        var offsetX = $("#loveHeart").width() / 2;
+        var offsetY = $("#loveHeart").height() / 2 - 55;
+        var together = new Date();
+        together.setFullYear(2013, 2, 28);
+        together.setHours(20);
+        together.setMinutes(0);
+        together.setSeconds(0);
+        together.setMilliseconds(0);
+
+        if (!document.createElement('canvas').getContext) {
+            var msg = document.createElement("div");
+            msg.id = "errorMsg";
+            msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+";
+            document.body.appendChild(msg);
+            $("#code").css("display", "none");
+            $("#copyright").css("position", "absolute");
+            $("#copyright").css("bottom", "10px");
+            document.execCommand("stop");
+        } else {
+            setTimeout(function () {
+                startHeartAnimation();
+            }, 5000);
+
+            timeElapse(together);
+            setInterval(function () {
+                timeElapse(together);
+            }, 500);
+
+            adjustCodePosition();
+            $("#code").typewriter();
+        }
+    </script>
+</div>
+<a href="javascript:void (0)" class="cd-top">Top</a>
+<footer>
+    <img src="img/logo_footer.png" alt="Crafty">
+    <p class="rights">熊雪松 © <a href="http://xiongxuesong.cc/">xiongxuesong.cc</a></p>
+</footer><!--  End Footer  -->
+</body>
+</html>
