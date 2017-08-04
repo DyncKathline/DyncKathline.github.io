@@ -19,7 +19,7 @@
 <header>
     <div class="wrapper">
         <img src="img/logo.png" alt="Crafty" class="logo">
-        <a href="#" class="menu_icon" id="menu_icon"></a>
+        <a href="javascript:void (0)" class="menu_icon" id="menu_icon"></a>
         <nav id="nav_menu">
             <ul>
                 <li><a href="index.html">首页</a></li>
@@ -36,8 +36,8 @@
     </div>
 </header><!--  End Header  -->
 <div class="mainContent">
-    <div id="mainDiv">
-        <div id="code">
+    <div class="mainDiv">
+        <div class="code">
             <span class="comments">/**</span><br />
             <span class="comments">*2013—02-14,</span><br />
             <span class="comments">*2013-02-28.</span><br />
@@ -65,14 +65,14 @@
             I want to say:<br />
             Baby, I love you forever;<br />
         </div>
-        <div id="loveHeart">
-            <canvas id="garden"></canvas>
-            <div id="words">
-                <div id="messages">
+        <div class="loveHeart">
+            <canvas class="garden"></canvas>
+            <div class="words">
+                <div class="messages">
                     亲爱的，这是我们相爱在一起的时光。
-                    <div id="elapseClock"></div>
+                    <div class="elapseClock"></div>
                 </div>
-                <div id="loveu">
+                <div class="loveu">
                     爱你直到永永远远。<br/>
                     <div class="signature">- 李先生</div>
                 </div>
@@ -82,8 +82,8 @@
     <span id="client"></span>
 
     <script type="text/javascript">
-        var offsetX = $("#loveHeart").width() / 2;
-        var offsetY = $("#loveHeart").height() / 2 - 55;
+        var offsetX = $(".loveHeart").width() / 2;
+        var offsetY = $(".loveHeart").height() / 2 - 55;
         var together = new Date();
         together.setFullYear(2013, 2, 28);
         together.setHours(20);
@@ -96,7 +96,7 @@
             msg.id = "errorMsg";
             msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+";
             document.body.appendChild(msg);
-            $("#code").css("display", "none");
+            $(".code").css("display", "none");
             document.execCommand("stop");
         } else {
             setTimeout(function () {
@@ -108,7 +108,7 @@
                 timeElapse(together);
             }, 500);
 
-            $("#code").typewriter();
+            $(".code").typewriter();
         }
     </script>
 </div>

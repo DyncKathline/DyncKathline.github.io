@@ -5,13 +5,13 @@ var clientHeight = $(window).height();
 
 $(function () {
     // setup garden
-	$loveHeart = $("#loveHeart");
+	$loveHeart = $(".loveHeart");
 	var offsetX = $loveHeart.width() / 2;
 	var offsetY = $loveHeart.height() / 2 - 55;
-    $garden = $("#garden");
+    $garden = $(".garden");
     gardenCanvas = $garden[0];
-	gardenCanvas.width = $("#loveHeart").width();
-    gardenCanvas.height = $("#loveHeart").height()
+	gardenCanvas.width = $(".loveHeart").width();
+    gardenCanvas.height = $(".loveHeart").height()
     gardenCtx = gardenCanvas.getContext("2d");
     gardenCtx.globalCompositeOperation = "lighter";
     garden = new Garden(gardenCtx, gardenCanvas);
@@ -106,16 +106,16 @@ function timeElapse(date){
 		seconds = "0" + seconds;
 	}
 	var result = "<span class=\"digit\">" + days + "</span> days <span class=\"digit\">" + hours + "</span> hours <span class=\"digit\">" + minutes + "</span> minutes <span class=\"digit\">" + seconds + "</span> seconds"; 
-	$("#elapseClock").html(result);
+	$(".elapseClock").html(result);
 }
 
 function showMessages() {
 	// adjustWordsPosition();
-	$('#messages').fadeIn(5000, function() {
+	$('.messages').fadeIn(5000, function() {
 		showLoveU();
 	});
 }
 
 function showLoveU() {
-	$('#loveu').fadeIn(3000);
+	$('.loveu').fadeIn(3000);
 }
