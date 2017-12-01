@@ -233,9 +233,19 @@ footer .rights a{
     color: #3b3b3b;
 }
 
-a{
-    color: #3b3b3b;
+footer ul {
+    list-style: none;
+    display:flex;
+    justify-content:center
 }
+
+footer ul li {
+    float: left;
+    padding: 0 5px;
+}
+
+a { color: #000000; text-decoration: none; transition: All 0.5s ease; -webkit-transition: All 0.5s ease; -moz-transition: All 0.5s ease; -o-transition: All 0.5s ease; }
+a:hover { color: #e5642b; }
 
 @media (max-width:1200px){
     header nav ul li{

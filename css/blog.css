@@ -33,9 +33,9 @@ aside section h2 { background: #f16e50; color: #FFF; padding-left: 30px; height:
 
 .blogitem { width: 70%; background: #fff; float: right }
 .blogitem article { border-bottom: #F4F3EF 40px solid; }
-.title { background: url(../images/titlebg.png) no-repeat 5% 80%; font-size: 20px; line-height: 28px; display: inline-block; padding: 38px 60px 8px 80px; border-bottom: 1px solid #e2e2e2; width: 100%; }
-.title a { color: #454545; }
-.title a:hover { padding: 20px }
+.title { background: url(../images/titlebg.png) no-repeat 20px 37px; font-size: 20px; line-height: 28px; display: inline-block; padding: 38px 60px 8px 40px; border-bottom: 1px solid #e2e2e2; width: 100%; }
+.title a { color: #454545;margin-left: 10px; }
+.title a:hover { padding: 10px }
 .text { font-size: 14px; padding: 20px 40px; }
 .text p { line-height: 24px; margin-bottom: 10px }
 .textimg { text-align: center }
